@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create new account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="d-flex justify-content-center" style="margin-top: 10%">
+            <div class="card border-secondary w-50">
+                <div class="card-header">
+                    Sign Up
+                </div>
+                <div class="card-body">
+                    <form action="DispatchServlet" method="POST">
+                        <div class="form-group">
+                            <label>Email: </label>
+                            <input class="form-control col-6" type="text" name="txtEmail" value="" /> 
+                        </div>
+                        <div class="form-group">
+                            <label>Password: </label>
+                            <input class="form-control col-6" type="password" name="txtPassword" value="" /> 
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm password: </label>
+                            <input class="form-control col-6" type="password" name="txtConfirmPassword" value="" /> 
+                        </div>
+                        <div class="form-group">
+                            <label>Name: </label>
+                            <input class="form-control col-6" type="text" name="txtName" value="" /> 
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Sign up" class="btn btn-primary" name="btAction"/>
+                            <a href="login.html" class="btn btn-danger" style="color: white">Already have account?</a>                                
+                        </div>                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
